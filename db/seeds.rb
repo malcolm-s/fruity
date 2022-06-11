@@ -8,3 +8,6 @@
 Player.create(name: "Ben")
 Player.create(name: "Malcolm")
 Player.create(name: "Claire")
+
+Fruit.create(name: "Banana", score: 1, emoji: "🍌")
+Fruit.create(name: "Apple", score: 2, emoji: "🍏")
