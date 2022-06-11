@@ -1,6 +1,8 @@
 <h1>Eat some fruit</h1>
-
 <%= link_to("Chomp", players_path) %>
-
 <h2>This week</h2>
-<h2>Past weeks</h2>
+<% @player_scores.each do |player_score| %>
+  <div>
+    <%= player_score[:player] %>: <%= player_score[:score] %>
+  </div>
+<% end %>
