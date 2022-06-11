@@ -6,6 +6,8 @@ class PlayersController < ApplicationController
   end
 
   def choose_player
+    logger.info("Something happened")
+    redirect_to(controller: "chomps", action: "new")
   end
 
 end
