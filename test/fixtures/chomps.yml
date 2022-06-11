@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  player: one
+  fruit: one
+  date: 2022-06-11
+
+two:
+  player: two
+  fruit: two
+  date: 2022-06-11
