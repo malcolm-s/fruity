@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_06_11_110151) do
+ActiveRecord::Schema[7.0].define(version: 2022_06_11_145644) do
   create_table "chomps", force: :cascade do |t|
     t.integer "player_id", null: false
     t.integer "fruit_id", null: false
-    t.date "date", null: false
+    t.date "date", default: -> { "CURRENT_TIMESTAMP" }, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["fruit_id"], name: "index_chomps_on_fruit_id"

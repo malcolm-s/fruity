@@ -7,7 +7,7 @@ class PlayersController < ApplicationController
 
   def choose_player
     logger.info("Something happened")
-    redirect_to(controller: "chomps", action: "new")
+    redirect_to(controller: "chomps", action: "new", player_id: params[:player_id])
   end
 
 end
