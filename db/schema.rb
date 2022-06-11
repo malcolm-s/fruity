@@ -21,13 +21,13 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_11_110151) do
     t.index ["player_id"], name: "index_chomps_on_player_id"
   end
 
-  create_table "fruit", force: :cascade do |t|
+  create_table "fruits", force: :cascade do |t|
     t.string "name", null: false
     t.integer "score", null: false
     t.string "emoji", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["name"], name: "index_fruit_on_name", unique: true
+    t.index ["name"], name: "index_fruits_on_name", unique: true
   end
 
   create_table "players", force: :cascade do |t|
