@@ -1,11 +1,13 @@
 <h1>Choose player</h1>
+<div class="layout__divider rainbow-bg"></div>
 <form action="<%= url_for(action: "choose_player") %>" method="post">
-  <% @players.each do |player| %>
-    <div>
-      <input type="radio" id="<%= player.id %>" name="player_id" value="<%= player.id %>">
-      <label for="<%= player.id %>"><%= player.name %></label>
-    </div>
-  <% end %>
-
-  <button type="submit">Next</button>
+  <div class="mb-3">
+    <% @players.each do |player| %>
+      <div class="mb-2">
+        <input type="radio" id="<%= player.id %>" name="player_id" value="<%= player.id %>">
+        <label for="<%= player.id %>"><%= player.name %></label>
+      </div>
+    <% end %>
+  </div>
+  <button class="button" type="submit">Next 🌈</button>
 </form>

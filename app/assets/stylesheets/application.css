@@ -13,3 +13,69 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  font-family: "Karla", sans-serif;
+  color: #111;
+}
+
+h1 {
+  font-size: 48px;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.layout__divider {
+  height: 8px;
+  margin-bottom: 16px;
+}
+
+.button {
+  text-decoration: none;
+  color: #111;
+  border: 3px solid #111;
+  border-radius: 32px;
+  padding: 8px 16px;
+  display: inline-block;
+  font-size: large;
+  background: none;
+}
+
+.rainbow-bg {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 154, 0, 1) 10%,
+    rgba(208, 222, 33, 1) 20%,
+    rgba(79, 220, 74, 1) 30%,
+    rgba(63, 218, 216, 1) 40%,
+    rgba(47, 201, 226, 1) 50%,
+    rgba(28, 127, 238, 1) 60%,
+    rgba(95, 21, 242, 1) 70%,
+    rgba(186, 12, 248, 1) 80%,
+    rgba(251, 7, 217, 1) 90%,
+    rgba(255, 0, 0, 1) 100%
+  );
+}
+
+.text-lg {
+  font-size: 24px;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.mb-2 {
+  margin-bottom: 8px;
+}
+
+.mb-3 {
+  margin-bottom: 16px;
+}

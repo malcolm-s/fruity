@@ -1,12 +1,14 @@
 <h1>Choose fruit</h1>
-<p>Choose which fruit to eat</p>
+<div class="layout__divider rainbow-bg"></div>
 <form action="<%= url_for(action: "create") %>" method="post">
   <input type="hidden" name="player_id" value="<%= params[:player_id] %>" />
-  <% @fruit.each do |fruit| %>
-    <div>
-      <input type="radio" id="<%= fruit.id %>" name="fruit_id" value="<%= fruit.id %>">
-      <label for="<%= fruit.id %>"><%= fruit.emoji + " " + fruit.name %></label>
-    </div>
-  <% end %>
-  <button type="submit">Chomp!</button>
+  <div class="mb-3">
+    <% @fruit.each do |fruit| %>
+      <div class="mb-2">
+        <input type="radio" id="<%= fruit.id %>" name="fruit_id" value="<%= fruit.id %>">
+        <label for="<%= fruit.id %>"><%= fruit.emoji + " " + fruit.name %></label>
+      </div>
+    <% end %>
+  </div>
+  <button class="button" type="submit">Chomp!</button>
 </form>

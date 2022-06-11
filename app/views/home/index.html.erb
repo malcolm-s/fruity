@@ -1,9 +1,12 @@
 <h1>Eat some fruit</h1>
-<%= link_to("Chomp", players_path) %>
+<div class="layout__divider rainbow-bg"></div>
+<div class="mb-3">
+  <%= link_to("Chomp 🌈", players_path, class: "button") %>
+</div>
 <h2>This week</h2>
-<% @players.each do |player|%>
-  <div>
-    <%= player.name %>: <%= player.current_score %>
+<% @players.each_with_index do |player, i|%>
+  <div class="text-lg">
+    <span class="<%= i == 0 ? 'text-bold' : '' %>"><%= player.name %></span>
     <span>
       <% player.chomps.each do |chomp| %>
         <%= chomp.fruit.emoji %>
